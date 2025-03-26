@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Laela Febriana</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin-top: 80px;
+            text-align: center;
+        }
+
+        header {
+            background-color: #007BFF;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #d4edda;
+        }
+
+        .profile {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .video-section {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1>Laela Febriana</h1>
+            <nav>
+                <ul class="d-flex">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="formulir.html">Pendaftaran</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="profile">
+        <img src="image/Gambr9.jpeg" alt="Foto Profil">
+        <h2>Laela Febriana</h2>
+        <p><strong>Tanggal Lahir:</strong> 19 Februari 2005</p>
+        <p><strong>Alamat:</strong> Jln. Pejanggik Pancor Selong - LOTIM</p>
+        <p><strong>Email:</strong> laelafebriana199@gmail.com</p>
+        <p><strong>Telepon:</strong> +62 85962410416</p>
+        <p><strong>Pendidikan:</strong> Mahasiswa Pendidikan Informatika, Universitas Hamzanwadi</p>
+        <p><strong>Hobi:</strong> Olahraga, Masak, Traveling</p>
+    </div>
+
+    <div class="video-section">
+        <h2>Video Perkenalan</h2>
+        <video controls>
+            <source src="image/vidio4.mp4" type="video/mp4">
+            Browser Anda tidak mendukung pemutaran video.
+        </video>
+    </div>
+</body>
+</html>

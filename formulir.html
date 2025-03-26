@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Laela Febriana</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #eef1f6;
+            color: #333;
+            margin-top: 80px;
+            text-align: center;
+        }
+
+        header {
+            background: linear-gradient(135deg, #007bff, #6610f2);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #cce5ff;
+        }
+
+        .gallery-container {
+            margin-top: 30px;
+            padding: 20px;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img, .gallery-item video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1>Laela Febriana</h1>
+            <nav>
+                <ul class="d-flex">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="formulir.html">Pendaftaran</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Registration Form -->
+    <section class="container my-5 py-5">
+        <h2 class="text-center text-success mb-4">Formulir Pendaftaran</h2>
+        <form id="registrationForm" class="bg-light p-4 rounded shadow-lg">
+            <h4 class="text-success mb-3">Data Pribadi</h4>
+            <div class="mb-3">
+                <label for="nama" class="form-label">Nama Lengkap</label>
+                <input type="text" id="nama" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label for="nik" class="form-label">NIK</label>
+                <input type="text" id="nik" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label for="ttl" class="form-label">Tempat, Tanggal Lahir</label>
+                <input type="text" id="ttl" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label for="jenisKelamin" class="form-label">Jenis Kelamin</label>
+                <select id="jenisKelamin" class="form-select" required>
+                    <option value="">Pilih Jenis Kelamin</option>
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="program1" class="form-label">Program Studi Pilihan</label>
+                <select id="program1" class="form-select" required>
+                    <option value="">Pilih Program Studi</option>
+                    <option value="Pendidikan Informatika">Pendidikan Informatika</option>
+                    <option value="Teknik Informatika">Teknik Informatika</option>
+                    <option value="Teknik Lingkungan">Teknik Lingkungan</option>
+                    <option value="Teknik Komputer">Teknik Komputer</option>
+                    <option value="Sistem Informasi">Sistem Informasi</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-success w-100 mt-4">Daftar</button>
+        </form>
+    </section>
+</body>
+</html>
